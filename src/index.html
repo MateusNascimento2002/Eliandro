@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>SolaraTech - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="../img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/afa3f37976.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-blue-800 flex flex-col text-zinc-900 overflow-y-auto">
+    <header
+      class="shadow-md w-full h-20 flex items-center justify-between px-4"
+    >
+      <div class="flex gap-4 items-center justify-center">
+        <img class="h-14" src="../img/logo.png" />
+        <span class="text-2xl font-bold text-gray-50">SOLARA TECH</span>
+      </div>
+    </header>
+
+    <main class="w-full h-[500px]">
+      <div
+        class="bg-[url('../img/banner.jpg')] bg-cover bg-center w-full h-full"
+      >
+        <div
+          class="gap-4 flex flex-col items-center justify-center w-full h-full bg-blue-900 bg-opacity-80"
+        >
+          <div class="text-gray-50 font-bold text-5xl">SOLARA TECH</div>
+          <div class="text-gray-50 font-semibold text-4xl">
+            Inovando para um Futuro Sustentável.
+          </div>
+          <div class="text-gray-50 w-[50%] text-xl text-justify font-medium">
+            A SolaraTech, com uma missão de liderar a transição para um futuro
+            sustentável, desenvolve tecnologias limpas e soluções de energia
+            renovável. Fundada com o compromisso de inovar para o bem-estar do
+            planeta, a empresa reúne especialistas apaixonados por um futuro
+            verde, promovendo produtos que reduzem a pegada ecológica e
+            estabelecem novos padrões de sustentabilidade.
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <a
+              href="./about.html"
+              class="p-4 bg-white rounded-md hover:scale-110 duration-500 hover:bg-blue-500 hover:text-white shadow-lg font-semibold hover:font-bold"
+              >MAIS SOBRE NÓS</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="flex h-[600px] w-full bg-blue-950 items-start justify-start gap-10 py-6 px-72"
+    >
+      <div
+        class="w-[50%] h-full flex flex-col items-start justify-center gap-4"
+      >
+        <span class="text-4xl font-bold text-white">Entre em contato</span>
+        <form
+          class="w-full items-center flex flex-col gap-4 bg-white h-full shadow-2xl rounded-lg p-4"
+        >
+          <div class="flex flex-col w-full">
+            <label for="nome">Nome<font class="text-red-600">*</font>:</label>
+            <input
+              id="nome"
+              placeholder="Seu nome"
+              type="text"
+              class="bg-gray-200 px-4 py-2 rounded-md"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="email">Email<font class="text-red-600">*</font>:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Seu melhor e-mail"
+              class="bg-gray-200 px-4 py-2 rounded-md"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="telefone"
+              >Telefone<font class="text-red-600">*</font>:</label
+            >
+            <input
+              id="telefone"
+              placeholder="XX X XXXX-XXXX"
+              class="bg-gray-200 px-4 py-2 rounded-md"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="w-[50%] h-full flex flex-col gap-4 text-white">
+        <div class="flex gap-2 items-center justify-start">
+          <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+          <span>(17) 6532-8732</span>
+          <i class="fa-solid fa-grip-lines-vertical" style="color: #ffffff"></i>
+          <i class="fa-solid fa-mobile" style="color: #ffffff"></i>
+          <span>(17) 6532-8732</span>
+        </div>
+        <div class="gap-2 flex items-center justify-start">
+          <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+          <span class="text-md"
+            >R. Manoel da Nóbrega, 133, Centro, Diadema - SP
+          </span>
+        </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              class="gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=R. Manoel da Nóbrega, 133, Centro, Diadema - SP&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe
+            ><a href="https://strandsgame.net/">Strands Game</a>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 400px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 400px;
+            }
+            .gmap_iframe {
+              height: 400px !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="w-full h-14 bg-blue-900 flex items-center text-zinc-50 px-6 justify-between"
+      1
+    >
+      <a
+        class="hover:cursor-pointer hover:underline hover:scale-105 duration-300"
+        href="https://github.com/MateusNascimento2002"
+        target="_blank"
+        >@2024 MATEUS FERNANDO DO NASCIMENTO. | Powered by Me</a
+      >
+      <span
+        class="hover:cursor-pointer hover:underline hover:scale-105 duration-300"
+        >Política de Privacidade</span
+      >
+    </footer>
+  </body>
+</html>
