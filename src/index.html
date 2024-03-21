@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/styles.css" rel="stylesheet" />
-    <title>SolaraTech - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="../css/tailwindStyles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>SolaraTech - Home</title>
     <link rel="icon" href="../img/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
@@ -18,184 +19,226 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
-  <body
-    class="bg-blue-800 flex flex-col text-zinc-900 overflow-y-auto animate-entrada-letras"
-  >
-    <header class="shadow-md w-full h-20 flex items-center justify-between px-4">
-      <div class="flex gap-4 items-center justify-center">
-        <img class="h-14" src="../img/logo.png" />
-        <span class="text-2xl font-bold text-gray-50">SOLARA TECH</span>
-      </div>
-    </header>
+  <body class="bg-white flex flex-col text-zinc-900 font-[Poppins]">
+    <div
+      class="h-full w-full flex flex-col items-center justify-center relative overflow-y-auto"
+    >
+      <header
+        class="shadow-md w-full h-20 flex items-center justify-between px-4 bg-green-800"
+      >
+        <div class="flex gap-4 items-center justify-center">
+          <img class="h-14" src="../img/logo.png" />
+          <span class="text-2xl font-bold text-gray-50">SOLARA TECH</span>
+        </div>
+      </header>
 
-    <main class="w-full h-[500px]">
-      <div class="bg-[url('../img/banner.jpg')] bg-cover bg-center w-full h-full">
-        <div
-          class="gap-4 flex flex-col items-center justify-center w-full h-full bg-blue-900 bg-opacity-80"
-        >
-          <div class="text-gray-50 font-bold text-5xl">SOLARA TECH</div>
-          <div class="text-gray-50 font-semibold text-4xl">
-            Inovando para um Futuro Sustentável.
-          </div>
-          <div class="text-gray-50 w-[50%] text-xl text-justify font-medium">
-            A SolaraTech, com uma missão de liderar a transição para um futuro
-            sustentável, desenvolve tecnologias limpas e soluções de energia
-            renovável. Fundada com o compromisso de inovar para o bem-estar do
-            planeta, a empresa reúne especialistas apaixonados por um futuro verde,
-            promovendo produtos que reduzem a pegada ecológica e estabelecem novos
-            padrões de sustentabilidade.
-          </div>
-          <div class="w-full flex items-center justify-center">
-            <a
-              href="./about.html"
-              class="p-4 bg-white rounded-md hover:scale-110 duration-500 hover:bg-blue-500 hover:text-white shadow-lg font-semibold hover:font-bold"
-              >MAIS SOBRE NÓS</a
+      <main class="w-full md:h-[500px]">
+        <div class="bg-[url('../img/banner.jpg')] bg-cover bg-center w-full h-full">
+          <div
+            class="gap-3 flex flex-col items-center justify-center w-full h-full bg-green-900 bg-opacity-80 p-4 md:gap-4"
+          >
+            <div class="text-gray-50 font-bold text-2xl md:text-5xl">
+              SOLARA TECH
+            </div>
+            <div class="text-gray-50 font-semibold text-xl md:text-4xl">
+              Inovando para um Futuro Sustentável.
+            </div>
+            <div
+              class="text-gray-50 w-full px-4 text-sm text-justify font-medium md:text-xl md:w-[50%]"
             >
+              A SolaraTech, com uma missão de liderar a transição para um futuro
+              sustentável, desenvolve tecnologias limpas e soluções de energia
+              renovável. Fundada com o compromisso de inovar para o bem-estar do
+              planeta, a empresa reúne especialistas apaixonados por um futuro verde,
+              promovendo produtos que reduzem a pegada ecológica e estabelecem novos
+              padrões de sustentabilidade.
+            </div>
+            <div class="w-full flex items-center justify-center">
+              <a
+                href="./about.html"
+                class="p-4 bg-white rounded-md hover:scale-110 duration-500 hover:bg-blue-500 hover:text-white shadow-lg font-semibold hover:font-bold"
+                >MAIS SOBRE NÓS</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-    <div
-      class="flex h-[600px] w-full bg-blue-950 items-start justify-start gap-10 py-6 px-72"
-    >
-      <div class="w-[50%] h-full flex flex-col items-start justify-center gap-4">
-        <span class="text-4xl font-bold text-white">Entre em contato</span>
-        <form
-          id="formContato"
-          class="w-full items-center flex flex-col gap-4 bg-white h-full shadow-2xl rounded-lg p-4"
+      </main>
+      <div
+        class="flex flex-col w-full bg-green-950 items-start justify-start gap-10 p-6 md:flex-row md:justify-center md:items-center md:px-60"
+      >
+        <div
+          class="h-full flex flex-col items-start justify-center gap-4 md:w-[50%]"
         >
-          <div class="flex flex-col w-full gap-2">
-            <label for="nome">Nome<font class="text-red-600">*</font>:</label>
-            <input
-              id="nome"
-              placeholder="Seu nome"
-              type="text"
-              class="bg-gray-200 px-4 py-2 rounded-md"
-              required
-            />
-          </div>
-
-          <div class="flex flex-col w-full gap-2">
-            <label for="email">Email<font class="text-red-600">*</font>:</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Seu melhor e-mail"
-              class="bg-gray-200 px-4 py-2 rounded-md"
-              required
-            />
-          </div>
-
-          <div class="flex flex-col w-full gap-2">
-            <label for="celular">Celular<font class="text-red-600">*</font>:</label>
-            <input
-              id="celular"
-              type="text"
-              placeholder="XX X XXXX-XXXX"
-              class="bg-gray-200 px-4 py-2 rounded-md"
-              required
-              oninput="aplicarMascaraTelefone(this)"
-              maxlength="13"
-            />
-          </div>
-          <div class="flex flex-col w-full gap-2">
-            <label for="mensagem"
-              >Mensagem<font class="text-red-600">*</font>:</label
-            >
-            <textarea
-              id="mensagem"
-              placeholder="Mensagem"
-              class="bg-gray-200 px-4 py-2 rounded-md"
-              required
-              rows="4"
-            ></textarea>
-          </div>
-
-          <div class="w-full flex justify-between items-center">
-            <div class="flex gap-2">
+          <span class="text-4xl font-bold text-white">Entre em contato</span>
+          <form
+            id="formContato"
+            class="w-full items-center flex flex-col gap-4 bg-white h-full shadow-2xl rounded-lg p-4"
+          >
+            <div class="flex flex-col w-full gap-2">
+              <label for="nome">Nome<font class="text-red-600">*</font>:</label>
               <input
-                id="checkbox"
-                type="checkbox"
+                id="nome"
+                placeholder="Seu nome"
+                type="text"
                 class="bg-gray-200 px-4 py-2 rounded-md"
                 required
               />
-              <label for="checkbox"
-                >Concordo em receber comunicados via telefone e/ou e-mail!<font
-                  class="text-red-600"
-                  >*</font
-                ></label
-              >
             </div>
-            <button
-              type="submit"
-              class="bg-blue-600 p-4 rounded-md text-white hover:scale-105 hover:bg-blue-700 duration-300"
-            >
-              Enviar
-            </button>
+
+            <div class="flex flex-col w-full gap-2">
+              <label for="email">Email<font class="text-red-600">*</font>:</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Seu melhor e-mail"
+                class="bg-gray-200 px-4 py-2 rounded-md"
+                required
+              />
+            </div>
+
+            <div class="flex flex-col w-full gap-2">
+              <label for="celular"
+                >Celular<font class="text-red-600">*</font>:</label
+              >
+              <input
+                id="celular"
+                type="text"
+                placeholder="XX X XXXX-XXXX"
+                class="bg-gray-200 px-4 py-2 rounded-md"
+                required
+                oninput="aplicarMascaraTelefone(this)"
+                maxlength="13"
+              />
+            </div>
+            <div class="flex flex-col w-full gap-2">
+              <label for="mensagem"
+                >Mensagem<font class="text-red-600">*</font>:</label
+              >
+              <textarea
+                id="mensagem"
+                placeholder="Mensagem"
+                class="bg-gray-200 px-4 py-2 rounded-md"
+                required
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="w-full flex justify-between items-center">
+              <div class="flex gap-2">
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  class="bg-gray-200 px-4 py-2 rounded-md"
+                  required
+                />
+                <label class="text-xs md:text-base" for="checkbox"
+                  >Concordo em receber comunicados via telefone e/ou e-mail!<font
+                    class="text-red-600"
+                    >*</font
+                  ></label
+                >
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-600 p-4 rounded-md text-white hover:scale-105 hover:bg-blue-700 duration-300"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="h-full flex flex-col gap-4 text-white md:w-[50%]">
+          <div class="flex gap-2 items-center justify-start">
+            <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+            <span class="text-sm md:text-base">(17) 6532-8732</span>
+            <i class="fa-solid fa-grip-lines-vertical" style="color: #ffffff"></i>
+            <i class="fa-solid fa-mobile" style="color: #ffffff"></i>
+            <span class="text-sm md:text-base">(17) 6532-8732</span>
           </div>
-        </form>
+          <div class="gap-2 flex items-center justify-start">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+            <span class="text-sm md:text-base"
+              >R. Manoel da Nóbrega, 133, Centro, Diadema - SP
+            </span>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=R. Manoel da Nóbrega, 133, Centro, Diadema - SP&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+              ><a href="https://strandsgame.net/">Strands Game</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 400px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+              }
+              .gmap_iframe {
+                height: 400px !important;
+              }
+            </style>
+          </div>
+        </div>
       </div>
-      <div class="w-[50%] h-full flex flex-col gap-4 text-white">
-        <div class="flex gap-2 items-center justify-start">
-          <i class="fa-solid fa-phone" style="color: #ffffff"></i>
-          <span>(17) 6532-8732</span>
-          <i class="fa-solid fa-grip-lines-vertical" style="color: #ffffff"></i>
-          <i class="fa-solid fa-mobile" style="color: #ffffff"></i>
-          <span>(17) 6532-8732</span>
-        </div>
-        <div class="gap-2 flex items-center justify-start">
-          <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
-          <span class="text-md"
-            >R. Manoel da Nóbrega, 133, Centro, Diadema - SP
-          </span>
-        </div>
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              class="gmap_iframe"
-              width="100%"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=R. Manoel da Nóbrega, 133, Centro, Diadema - SP&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            ></iframe
-            ><a href="https://strandsgame.net/">Strands Game</a>
-          </div>
-          <style>
-            .mapouter {
-              position: relative;
-              text-align: right;
-              width: 100%;
-              height: 400px;
-            }
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              width: 100%;
-              height: 400px;
-            }
-            .gmap_iframe {
-              height: 400px !important;
-            }
-          </style>
-        </div>
+      <footer
+        class="w-full h-14 bg-green-900 flex items-center p-1 text-zinc-50 justify-between md:px-6"
+        1
+      >
+        <a
+          class="hover:cursor-pointer hover:underline hover:scale-105 duration-300 text-xs md:text-lg"
+          href="https://github.com/MateusNascimento2002"
+          target="_blank"
+          >@2024 MATEUS FERNANDO DO NASCIMENTO.</a
+        >
+        <span
+          class="hover:cursor-pointer hover:underline hover:scale-105 duration-300 text-xs md:text-lg"
+          >Política de Privacidade</span
+        >
+      </footer>
+    </div>
+
+    <div
+      class="absolute top-0 left-0 bg-custom-gradient h-full w-full flex items-center justify-center text-white flex-col gap-4 loading-page overflow-hidden"
+    >
+      <div class="flex">
+        <svg
+          width="46"
+          height="36"
+          viewBox="0 0 46 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg-custom-animation"
+        >
+          <g id="Vector">
+            <path
+              d="M15.9609 27.0938C15.9609 28.25 15.7734 29.3438 15.3984 30.375C15.0234 31.4062 14.4844 32.3125 13.7812 33.0938C13.0938 33.8594 12.2578 34.4688 11.2734 34.9219C10.2891 35.3906 9.19531 35.625 7.99219 35.625C6.92969 35.625 5.94531 35.4531 5.03906 35.1094C4.14844 34.7812 3.375 34.3125 2.71875 33.7031C2.0625 33.0938 1.54688 32.3516 1.17188 31.4766C0.8125 30.6016 0.632812 29.625 0.632812 28.5469C0.632812 28.3281 0.640625 28.0547 0.65625 27.7266C0.671875 27.3984 0.71875 27.0859 0.796875 26.7891C0.890625 26.4766 1.01562 26.2188 1.17188 26.0156C1.34375 25.7969 1.58594 25.6875 1.89844 25.6875C2.14844 25.6875 2.42188 25.7422 2.71875 25.8516C3.03125 25.9453 3.32031 26.0781 3.58594 26.25C3.85156 26.4219 4.07031 26.6328 4.24219 26.8828C4.42969 27.1172 4.52344 27.375 4.52344 27.6562V29.0156C4.52344 30.0938 4.8125 30.9766 5.39062 31.6641C5.98438 32.3359 6.83594 32.6719 7.94531 32.6719C8.72656 32.6719 9.39844 32.4922 9.96094 32.1328C10.5234 31.7734 10.9766 31.3125 11.3203 30.75C11.6797 30.1875 11.9375 29.5625 12.0938 28.875C12.2656 28.1719 12.3516 27.4844 12.3516 26.8125C12.3516 25.5 12.0781 24.2266 11.5312 22.9922C11 21.7578 10.3281 20.5547 9.51562 19.3828C8.70312 18.1953 7.82031 17.0312 6.86719 15.8906C5.91406 14.75 5.03125 13.6172 4.21875 12.4922C3.40625 11.3672 2.72656 10.2422 2.17969 9.11719C1.64844 7.99219 1.38281 6.84375 1.38281 5.67188C1.38281 4.71875 1.57031 3.89844 1.94531 3.21094C2.33594 2.50781 2.84375 1.9375 3.46875 1.5C4.10938 1.04688 4.82812 0.71875 5.625 0.515625C6.4375 0.296875 7.27344 0.1875 8.13281 0.1875C9.17969 0.1875 10.1172 0.335938 10.9453 0.632812C11.7734 0.929688 12.4766 1.35938 13.0547 1.92188C13.6328 2.48438 14.0703 3.17969 14.3672 4.00781C14.6797 4.82031 14.8359 5.75 14.8359 6.79688C14.8359 6.95312 14.8281 7.14844 14.8125 7.38281C14.7969 7.61719 14.7578 7.85156 14.6953 8.08594C14.6328 8.30469 14.5391 8.5 14.4141 8.67188C14.2891 8.82812 14.1172 8.90625 13.8984 8.90625C13.5859 8.90625 13.2734 8.82812 12.9609 8.67188C12.6953 8.53125 12.4766 8.39844 12.3047 8.27344C12.1484 8.13281 12.0234 7.98438 11.9297 7.82812C11.8359 7.65625 11.7656 7.46875 11.7188 7.26562C11.6719 7.0625 11.6328 6.8125 11.6016 6.51562C11.5234 5.95312 11.4219 5.44531 11.2969 4.99219C11.1719 4.53906 10.9844 4.15625 10.7344 3.84375C10.4844 3.53125 10.1562 3.28906 9.75 3.11719C9.34375 2.94531 8.82031 2.85938 8.17969 2.85938C7.72656 2.85938 7.28906 2.90625 6.86719 3C6.46094 3.09375 6.10156 3.25 5.78906 3.46875C5.49219 3.6875 5.25 3.97656 5.0625 4.33594C4.89062 4.67969 4.80469 5.10938 4.80469 5.625C4.80469 6.34375 4.96094 7.07812 5.27344 7.82812C5.60156 8.57812 6.02344 9.34375 6.53906 10.125C7.07031 10.9062 7.66406 11.7109 8.32031 12.5391C8.99219 13.3516 9.67969 14.1953 10.3828 15.0703C11.0859 15.9453 11.7656 16.8516 12.4219 17.7891C13.0938 18.7109 13.6875 19.6719 14.2031 20.6719C14.7344 21.6719 15.1562 22.7109 15.4688 23.7891C15.7969 24.8516 15.9609 25.9531 15.9609 27.0938Z"
+              fill="black"
+            />
+            <path
+              d="M45.5234 2.25C45.5234 2.8125 45.3594 3.27344 45.0312 3.63281C44.7188 3.99219 44.2891 4.23438 43.7422 4.35938C42.8672 4.54688 41.9688 4.64844 41.0469 4.66406C40.1406 4.66406 39.2422 4.6875 38.3516 4.73438V9.375C38.3516 13.3125 38.4688 17.2422 38.7031 21.1641C38.9531 25.0703 39.3516 28.9844 39.8984 32.9062C39.9453 33.1406 39.9922 33.375 40.0391 33.6094C40.1016 33.8438 40.1328 34.0781 40.1328 34.3125C40.1328 34.6875 40.0312 34.9609 39.8281 35.1328C39.6406 35.3047 39.3672 35.3906 39.0078 35.3906C38.7266 35.3906 38.375 35.3516 37.9531 35.2734C37.5469 35.2109 37.2266 35.1094 36.9922 34.9688C36.6797 34.7812 36.4766 34.5938 36.3828 34.4062C36.3047 34.2031 36.2422 33.9375 36.1953 33.6094C36.0234 32.5 35.9062 31.3906 35.8438 30.2812C35.7812 29.1719 35.7109 28.0625 35.6328 26.9531C35.4453 24.5781 35.2891 22.2109 35.1641 19.8516C35.0391 17.4922 34.9766 15.125 34.9766 12.75C34.9766 11.4531 34.9844 10.1641 35 8.88281C35.0156 7.60156 35.0234 6.29688 35.0234 4.96875C34.0547 5.0625 33.0781 5.15625 32.0938 5.25C31.125 5.34375 30.1484 5.39062 29.1641 5.39062C28.9297 5.39062 28.7422 5.33594 28.6016 5.22656C28.4453 5.10156 28.3672 4.92188 28.3672 4.6875C28.3672 4.14062 28.5469 3.71875 28.9062 3.42188C29.2656 3.10938 29.6953 2.89062 30.1953 2.76562C30.9922 2.59375 31.8047 2.48438 32.6328 2.4375C33.4609 2.375 34.2891 2.29688 35.1172 2.20312C35.1172 2.04688 35.125 1.89844 35.1406 1.75781C35.1562 1.60156 35.1875 1.46875 35.2344 1.35938C35.2969 1.23438 35.3828 1.13281 35.4922 1.05469C35.6016 0.976562 35.7578 0.9375 35.9609 0.9375C36.3359 0.9375 36.7188 1.02344 37.1094 1.19531C37.5 1.36719 37.8047 1.60938 38.0234 1.92188L41.9141 1.5C42.2891 1.45312 42.6641 1.40625 43.0391 1.35938C43.4141 1.29688 43.7891 1.26562 44.1641 1.26562C44.3359 1.26562 44.5 1.27344 44.6562 1.28906C44.8281 1.30469 44.9766 1.35156 45.1016 1.42969C45.2266 1.49219 45.3281 1.59375 45.4062 1.73438C45.4844 1.85938 45.5234 2.03125 45.5234 2.25Z"
+              fill="black"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="name-container">
+        <div class="logo-name">SOLARA TECH</div>
       </div>
     </div>
-    <footer
-      class="w-full h-14 bg-blue-900 flex items-center text-zinc-50 px-6 justify-between"
-      1
-    >
-      <a
-        class="hover:cursor-pointer hover:underline hover:scale-105 duration-300"
-        href="https://github.com/MateusNascimento2002"
-        target="_blank"
-        >@2024 MATEUS FERNANDO DO NASCIMENTO. | Powered by Me</a
-      >
-      <span class="hover:cursor-pointer hover:underline hover:scale-105 duration-300"
-        >Política de Privacidade</span
-      >
-    </footer>
 
     <script>
       function aplicarMascaraTelefone(input) {
@@ -222,5 +265,13 @@
           .addEventListener("submit", submitFormulario);
       });
     </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/gsap.js"></script>
   </body>
 </html>
