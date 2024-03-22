@@ -1,6 +1,6 @@
 # Solara Tech
 
-#Português
+# Português
 Bem-vindo(a) ao repositório do Solara Tech! Este projeto nasceu como um trabalho acadêmico e uma oportunidade para explorar as capacidades do TailwindCSS, demonstrando como essa ferramenta pode ser poderosa quando combinada com HTML e JavaScript para o desenvolvimento web.
 
 ## Tecnologias Utilizadas
