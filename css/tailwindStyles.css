@@ -596,6 +596,22 @@ video {
   width: 100%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -642,10 +658,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
 }
 
 .rounded-lg {
@@ -751,14 +763,14 @@ video {
   line-height: 2.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-xs {
