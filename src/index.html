@@ -7,12 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="../css/tailwindStyles.css" rel="stylesheet" />
     <link href="../css/styles.css" rel="stylesheet" />
+
     <title>SolaraTech - Home</title>
     <link rel="icon" href="../img/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script
       src="https://kit.fontawesome.com/afa3f37976.js"
       crossorigin="anonymous"
@@ -24,7 +33,7 @@
       class="h-full w-full flex flex-col items-center justify-center relative overflow-y-auto"
     >
       <header
-        class="shadow-md w-full h-20 flex items-center justify-between px-4 bg-green-800"
+        class="shadow-md w-full min-h-20 flex items-center justify-between px-4 bg-green-800"
       >
         <div class="flex gap-4 items-center justify-center">
           <img class="h-14" src="../img/logo.png" />
@@ -86,17 +95,6 @@
             </div>
 
             <div class="flex flex-col w-full gap-2">
-              <label for="email">Email<font class="text-red-600">*</font>:</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="Seu melhor e-mail"
-                class="bg-gray-200 px-4 py-2 rounded-md"
-                required
-              />
-            </div>
-
-            <div class="flex flex-col w-full gap-2">
               <label for="celular"
                 >Celular<font class="text-red-600">*</font>:</label
               >
@@ -111,12 +109,22 @@
               />
             </div>
             <div class="flex flex-col w-full gap-2">
+              <label for="email">Email<font class="text-red-600">*</font>:</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Seu melhor e-mail"
+                class="bg-gray-200 px-4 py-2 rounded-md"
+                required
+              />
+            </div>
+            <div class="flex flex-col w-full gap-2">
               <label for="mensagem"
-                >Mensagem<font class="text-red-600">*</font>:</label
+                >Motivo de contato<font class="text-red-600">*</font>:</label
               >
               <textarea
                 id="mensagem"
-                placeholder="Mensagem"
+                placeholder="Motivo de contato"
                 class="bg-gray-200 px-4 py-2 rounded-md"
                 required
                 rows="4"
@@ -195,8 +203,7 @@
         </div>
       </div>
       <footer
-        class="w-full h-14 bg-green-900 flex items-center p-1 text-zinc-50 justify-between md:px-6"
-        1
+        class="w-full min-h-14 bg-green-900 flex items-center p-2 text-zinc-50 justify-between md:px-6"
       >
         <a
           class="hover:cursor-pointer hover:underline hover:scale-105 duration-300 text-xs md:text-lg"
@@ -206,7 +213,7 @@
         >
         <span
           class="hover:cursor-pointer hover:underline hover:scale-105 duration-300 text-xs md:text-lg"
-          >Política de Privacidade</span
+          >Termo de consentimento de uso de dados.</span
         >
       </footer>
     </div>
@@ -239,39 +246,6 @@
         <div class="logo-name">SOLARA TECH</div>
       </div>
     </div>
-
-    <script>
-      function aplicarMascaraTelefone(input) {
-        let valor = input.value.replace(/\D/g, "");
-        valor = valor.replace(/^(\d{2})(\d)/g, "$1 $2");
-        valor = valor.replace(/(\d)(\d{4})$/, "$1-$2");
-        input.value = valor;
-      }
-
-      function submitFormulario(event) {
-        event.preventDefault();
-        Swal.fire("Parabéns, você enviou o formulário!");
-
-        document.getElementById("nome").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("celular").value = "";
-        document.getElementById("mensagem").value = "";
-        document.getElementById("checkbox").checked = false;
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("formContato")
-          .addEventListener("submit", submitFormulario);
-      });
-    </script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/gsap.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>

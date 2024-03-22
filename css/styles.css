@@ -50,3 +50,22 @@
   margin-left: 20px;
   font-weight: bolder;
 }
+
+.section-hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.section-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .section-hidden {
+    transition: none;
+  }
+}

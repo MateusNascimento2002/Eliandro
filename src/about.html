@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  aboutpage
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="../css/tailwindStyles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>SolaraTech - Home</title>
+    <script src="./js/about.js"></script>
+    <script
+      src="https://kit.fontawesome.com/afa3f37976.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-white flex flex-col text-zinc-900 font-[Poppins] w-full h-screen">
+    <div class="h-full w-full flex flex-col items-start justify-between">
+      <header
+        class="shadow-md w-full min-h-20 flex items-center justify-start px-4 bg-green-800"
+      >
+        <a href="./index.html">
+          <img src="../img/caretLeft.svg" class="w-10" />
+        </a>
+        <div class="flex gap-4 items-center justify-center">
+          <img class="h-14" src="../img/logo.png" />
+          <span class="text-2xl font-bold text-gray-50">SOLARA TECH</span>
+        </div>
+      </header>
+
+      <main
+        class="w-full bg-green-700 flex-col items-start justify-start p-4 flex gap-4 md:px-72 md:gap-6"
+      >
+        <section id="sobre1" class="flex flex-col gap-4 section-hidden">
+          <span class="text-4xl text-white font-bold self-center md:self-start"
+            >Nossa missão</span
+          >
+          <div class="flex gap-2 flex-col md:flex-row md:text-xl md:gap-6">
+            <div class="w-full">
+              <img src="../img/sobre1.png" class="w-full rounded-lg" />
+            </div>
+            <div class="w-full">
+              <div class="text-md text-justify text-white">
+                A missão da SolaraTech é ser a vanguarda na revolução verde,
+                transformando o modo como o mundo gera e consome energia. Nosso
+                objetivo é acelerar a adoção de energias renováveis e tecnologias
+                sustentáveis, fornecendo soluções inovadoras que atendam às
+                necessidades atuais sem comprometer a capacidade das futuras gerações
+                de satisfazerem suas próprias necessidades. Acreditamos que, ao
+                liderar com o exemplo, podemos inspirar indivíduos, comunidades e
+                nações a se juntarem a nós nesta jornada rumo a um futuro mais limpo
+                e sustentável.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sobre2" class="flex flex-col gap-4 section-hidden">
+          <span class="text-4xl text-white font-bold self-center md:self-end"
+            >Nossos princípios</span
+          >
+          <div class="flex gap-2 flex-col md:flex-row-reverse md:text-xl md:gap-6">
+            <div class="w-full">
+              <img src="../img/sobre2.png" class="w-full rounded-lg" />
+            </div>
+            <div class="w-full">
+              <div class="text-md text-justify text-white">
+                Na SolaraTech, nossos princípios orientam cada decisão e ação.
+                Priorizamos a inovação responsável, focando no desenvolvimento de
+                produtos e serviços que não apenas avancem no campo da tecnologia,
+                mas que também promovam o bem-estar ambiental. A transparência e a
+                integridade são fundamentais em nossas operações, assegurando que
+                mantemos a confiança de nossos clientes e parceiros. Comprometemo-nos
+                com a excelência e a melhoria contínua, buscando constantemente
+                superar os limites do que é possível em tecnologias limpas e
+                sustentáveis.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sobre3" class="flex flex-col gap-4 section-hidden">
+          <span class="text-4xl text-white font-bold self-center md:self-start"
+            >Nossos valores</span
+          >
+          <div class="flex gap-2 flex-col md:flex-row md:text-xl md:gap-6">
+            <div class="w-full">
+              <img src="../img/sobre3.png" class="w-full rounded-lg" />
+            </div>
+            <div class="w-full">
+              <div class="text-md text-justify text-white">
+                Os valores da SolaraTech refletem nosso compromisso profundo com a
+                sustentabilidade e a ética ambiental. Colocamos um grande ênfase na
+                responsabilidade ecológica, esforçando-nos para minimizar nossa
+                pegada ambiental em todas as áreas de nossa atuação. A colaboração é
+                outro pilar essencial para nós, acreditamos que juntos, seja com
+                nossos funcionários, clientes ou comunidades globais, podemos fazer
+                uma diferença significativa. Finalmente, a inovação sustentável está
+                no coração de tudo o que fazemos, guiando-nos a criar soluções que
+                não só atendam às demandas do presente mas que também protejam os
+                recursos para as gerações futuras.
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="w-full min-h-14 bg-green-900 flex items-center p-2 text-zinc-50 justify-between md:px-6"
+      >
+        <a
+          class="hover:cursor-pointer hover:underline hover:scale-105 duration-300 text-xs md:text-lg"
+          href="https://github.com/MateusNascimento2002"
+          target="_blank"
+          >@2024 MATEUS FERNANDO DO NASCIMENTO.</a
+        >
+        <span
+          class="hover:cursor-pointer hover:underline hover:scale-105 duration-300 text-xs md:text-lg"
+          >Política de Privacidade</span
+        >
+      </footer>
+    </div>
+  </body>
 </html>
